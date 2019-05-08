@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Nazar](https://up.htmlacademy.ru/htmlcss/25/user/1041805).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://up.htmlacademy.ru/htmlcss/25/user/208340).
 
 ---
 
