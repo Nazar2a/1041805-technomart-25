@@ -10,7 +10,9 @@
 				<a class="logo">
 					<img src="index.html" width="1" height="1" alt="Логотип Техномарт">
 				</a>
-				<!-- Поле форма поиска -->
+				<form class="Search-form" action="" method="post">
+					<input type="search" name="Поиск" placeholder="Поиск:">     <!-- Как сделать поиск по странице?  -->
+				</form>
 				<a class="bookmarks" href="#">Закладки</a>
 				<a class="basket" href="#">Корзина</a>
 				<a class="order" href="#">Оформить заказ</a>
@@ -21,8 +23,8 @@
 					<p><span class="telephone">+7 (812) 555-05-55</span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
 				<div class="user-navigation">
-					<a href="#">Равшан Джамшутович</a>          <!-- ТЗ 3.4 ссылка на профайл  -->
-					<a href="#"></a>                            <!-- ТЗ 3.4 Выход на страницу деавторизации  -->
+					<a href="#" aria-label="имя пользователя">Равшан Джамшутович</a>       <!-- ТЗ 3.4 ссылка на профайл  -->
+					<a href="#"></a>                                                       <!-- ТЗ 3.4 Выход на страницу деавторизации  -->
 					<ul class="user-navigation-list">
 						<li><a href="#">Мои заказы</a></li>
 						<li><a href="#">Личный кабинет</a></li>
@@ -43,7 +45,7 @@
 		</header>
 		<main>
 			<ul class="breadcrumbs">
-				<li><a href="index.html"></a></li>
+				<li><a href="index.html" aria-label="главная страница"></a></li>
 				<li><a href="catalog.html">Каталог</a></li>
 				<li><a href="tool.html">Инструмент</a></li>
 				<li class="breadcrumbs-current">Перфораторы</li>
@@ -55,12 +57,48 @@
 					<div class="filters-price">
 					Фильтр по цене
 					</div>
-					<div class="filters-manufacturers">
-					Фильтр по производителям
-					</div>
-					<div class="filters-nutrition">
-					Фильтр по питании
-				</div> -->
+					 -->
+				<form class="filters-manufacturers-form" action="" method="get">
+					<fieldset>
+					<legend class="filters-type">Производители:</legend>
+						<ul class="product-filter">
+							<li class="product-filter-item">
+								<input id="filter-bosch" type="checkbox" name="BOSCH">
+								<label for="filter-bosch">BOSCH</label>
+							</li>
+							<li class="product-filter-item"> 
+								<input id="filter-interskul" type="checkbox" name="ИНТЕРСКОЛ">
+								<label for="filter-interskul">ИНТЕРСКОЛ</label>
+							</li>
+							<li class="product-filter-item"> 
+								<input id="filter-makita" type="checkbox" name="MAKITA">
+								<label for="filter-makita">MAKITA</label>
+							</li>
+							<li class="product-filter-item"> 
+								<input id="filter-dewalt" type="checkbox" name="DEWALT">
+								<label for="filter-dewalt">DEWALT</label>
+							</li>
+							<li class="product-filter-item"> 
+								<input id="filter-hitachi" type="checkbox" name="HITACHI">
+								<label for="filter-hitachi">HITACHI</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+					<legend class="filters-type">Питание:</legend>
+						<ul class="nutrition-filters">
+							<li class="nutrition-filter-item"> 
+								<input id="filter-battery" type="radio" name="nutrition" value="battery">
+								<label for="filter-battery">Аккумуляторны</label>
+							</li>
+							<li class="nutrition-filter-item"> 
+								<input id="filter-network" type="radio" name="nutrition" value="network">
+								<label for="filter-network">Сетевые</label>
+							</li>
+						</ul>
+					</fieldset>
+					<button class="button-show" type="submit">Показать</button>
+				</form> 
 			</section>
 			<section class="catalog">
 				<h2 class="visually-hidden">Каталог перфораторов</h2>
@@ -138,17 +176,16 @@
 						</p>
 					</li>	  
 				</ul>
-				<!--  
-					<ul class="pagination-list">
+				<ul class="pagination-list">
 					<li class="pagination-item pagination-item-current"><a>1</a></li>
 					<li class="pagination-item"><a href="#">2</a></li>
 					<li class="pagination-item"><a href="#">3</a></li>
 					<li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
-					</ul>
-				-->
+				</ul>
 			</section>
 			<section class="description">
-				<h2>Пара слов о перфораторах</h2>
+				<h2 class="description-headline">Пара слов о перфораторах</h2>
+				<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 			</section>
 		</main>
 		<footer class="page-footer">
@@ -190,5 +227,15 @@
 				</div>
 			</div>
 		</footer>
+		
+		<div class="modal-information">
+			<h2 class="modal-information-headline">Товар добавлен в корзину!</h2>
+			<p>
+				<a class="modal-information-make" href="#">Oформить заказ</a>
+				<button class="modal-information-continue" type="button">Продолжить покупки</button>
+			</p>
+			<button class="modal-close" type="button" aria-label="закрыть окно"></button>
+		</div>
+		
 	</body>
 </html>

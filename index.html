@@ -10,7 +10,9 @@
 				<a class="logo">
 					<img src="#" width="1" height="1" alt="Логотип Техномарт">
 				</a>
-				<!-- Поле форма поиска -->
+				<form class="Search-form" action="" method="post">
+					<input type="search" name="Поиск" placeholder="Поиск:">     <!-- Как сделать поиск по странице?  -->
+				</form>
 				<a class="bookmarks" href="#">Закладки</a>
 				<a class="basket" href="#">Корзина</a>
 				<a class="order" href="#">Оформить заказ</a>
@@ -20,7 +22,7 @@
 				<div class="contacts">
 					<p><span class="telephone">+7 (812) 555-05-55</span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
-				<ul class="user-navigation">
+				<ul class="user-navigation" aria-label="Меню входа пользователя	">
 					<li><a href="#">Войти</a></li>
 					<li><a href="#">Регистрация</a></li>
 				</ul>
@@ -114,7 +116,33 @@
 				</div>
 			</div>
 		</footer>
+		
+		<section class="modal-letter">
+			<h2 class="visually-hidden">Напишите нам</h2>
+			<form class="modal-letter-form" action="" method="post">
+				<div class="user-name-field">
+					<p>Ваше имя:</p>
+					<input class="user-name" type="text" placeholder="Имя Фамилия">
+				</div>
+				<div class="user-mail-field">
+					<p>Ваш e-mail:</p>
+					<input class="user-mail" type="text" placeholder="email@example.com">
+				</div>
+				<div class="letter-field">
+					<p>Текст письма:</p>                    
+					<textarea rows="10" cols="30" name="text-letter">В свободной форме</textarea>
+				</div>
+				<button class="button" type="submit">Отправить</button>
+			</form>
+			<button class="modal-close" type="button" aria-label="закрыть окно"></button>
+		</section>
+		
+		<div class="modal-map">
+			<h2 class="visually-hidden">Карта</h2>
+			<img class="" src="img/oll-map.jpg" width="940" height="446" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+			<button class="modal-close" type="button" aria-label="закрыть окно"></button>
+		</div>
+		
 	</body>
 </html>
-
 
