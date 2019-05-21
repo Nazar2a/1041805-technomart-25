@@ -10,8 +10,8 @@
 				<a class="logo">
 					<img src="#" width="1" height="1" alt="Логотип Техномарт">
 				</a>
-				<form class="Search-form" action="" method="post">
-					<input type="search" name="Поиск" placeholder="Поиск:">     <!-- Как сделать поиск по странице?  -->
+				<form class="search-form" action="" method="post">
+					<input type="search" name="search" placeholder="Поиск:"> 
 				</form>
 				<a class="bookmarks" href="#">Закладки</a>
 				<a class="basket" href="#">Корзина</a>
@@ -23,8 +23,8 @@
 					<p><span class="telephone">+7 (812) 555-05-55</span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
 				<ul class="user-navigation" aria-label="Меню входа пользователя	">
-					<li><a href="#">Войти</a></li>
-					<li><a href="#">Регистрация</a></li>
+					<li><a class="come-in" href="#">Войти</a></li>
+					<li><a class="check-in" href="#">Регистрация</a></li>
 				</ul>
 			</div>
 			<nav class="site-navigation">
@@ -121,16 +121,16 @@
 			<h2 class="visually-hidden">Напишите нам</h2>
 			<form class="modal-letter-form" action="" method="post">
 				<div class="user-name-field">
-					<p>Ваше имя:</p>
-					<input class="user-name" type="text" placeholder="Имя Фамилия">
+					<label for="user-name">Ваше имя:</label>
+					<input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
 				</div>
 				<div class="user-mail-field">
-					<p>Ваш e-mail:</p>
-					<input class="user-mail" type="text" placeholder="email@example.com">
+					<label for="user-mail">Ваш e-mail:</label>
+					<input id="user-mail" type="text" name="user-mail" placeholder="email@example.com">
 				</div>
 				<div class="letter-field">
-					<p>Текст письма:</p>                    
-					<textarea rows="10" cols="30" name="text-letter">В свободной форме</textarea>
+					<label for="text-letter">Текст письма:</label>                    
+					<textarea id="text-letter" rows="10" cols="30" name="text-letter">В свободной форме</textarea>
 				</div>
 				<button class="button" type="submit">Отправить</button>
 			</form>

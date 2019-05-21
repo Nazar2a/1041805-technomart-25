@@ -10,8 +10,8 @@
 				<a class="logo">
 					<img src="index.html" width="1" height="1" alt="Логотип Техномарт">
 				</a>
-				<form class="Search-form" action="" method="post">
-					<input type="search" name="Поиск" placeholder="Поиск:">     <!-- Как сделать поиск по странице?  -->
+				<form class="search-form" action="" method="post">
+					<input type="search" name="search" placeholder="Поиск:">  
 				</form>
 				<a class="bookmarks" href="#">Закладки</a>
 				<a class="basket" href="#">Корзина</a>
@@ -23,11 +23,11 @@
 					<p><span class="telephone">+7 (812) 555-05-55</span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
 				<div class="user-navigation">
-					<a href="#" aria-label="имя пользователя">Равшан Джамшутович</a>       <!-- ТЗ 3.4 ссылка на профайл  -->
-					<a href="#"></a>                                                       <!-- ТЗ 3.4 Выход на страницу деавторизации  -->
+					<a class="user-navigation-name" href="#" aria-label="имя пользователя">Равшан Джамшутович</a>       
+					<a class="user-navigation-output" href="#" aria-label="выход"></a> 
 					<ul class="user-navigation-list">
-						<li><a href="#">Мои заказы</a></li>
-						<li><a href="#">Личный кабинет</a></li>
+						<li><a class="my-orders" href="#">Мои заказы</a></li>
+						<li><a class="personal-area" href="#">Личный кабинет</a></li>
 					</ul>
 				</div>
 			</div>
@@ -57,35 +57,35 @@
 					<div class="filters-price">
 					Фильтр по цене
 					</div>
-					 -->
+				-->
 				<form class="filters-manufacturers-form" action="" method="get">
 					<fieldset>
-					<legend class="filters-type">Производители:</legend>
+						<legend class="filters-type">Производители:</legend>
 						<ul class="product-filter">
 							<li class="product-filter-item">
-								<input id="filter-bosch" type="checkbox" name="BOSCH">
+								<input id="filter-bosch" type="checkbox" name="filter-checkbox" value="BOSCH">
 								<label for="filter-bosch">BOSCH</label>
 							</li>
 							<li class="product-filter-item"> 
-								<input id="filter-interskul" type="checkbox" name="ИНТЕРСКОЛ">
+								<input id="filter-interskul" type="checkbox" name="filter-checkbox" value="ИНТЕРСКОЛ">
 								<label for="filter-interskul">ИНТЕРСКОЛ</label>
 							</li>
 							<li class="product-filter-item"> 
-								<input id="filter-makita" type="checkbox" name="MAKITA">
+								<input id="filter-makita" type="checkbox" name="filter-checkbox" value="MAKITA">
 								<label for="filter-makita">MAKITA</label>
 							</li>
 							<li class="product-filter-item"> 
-								<input id="filter-dewalt" type="checkbox" name="DEWALT">
+								<input id="filter-dewalt" type="checkbox" name="filter-checkbox" value="DEWALT">
 								<label for="filter-dewalt">DEWALT</label>
 							</li>
 							<li class="product-filter-item"> 
-								<input id="filter-hitachi" type="checkbox" name="HITACHI">
+								<input id="filter-hitachi" type="checkbox" name="filter-checkbox" value="HITACHI">
 								<label for="filter-hitachi">HITACHI</label>
 							</li>
 						</ul>
 					</fieldset>
 					<fieldset>
-					<legend class="filters-type">Питание:</legend>
+						<legend class="filters-type">Питание:</legend>
 						<ul class="nutrition-filters">
 							<li class="nutrition-filter-item"> 
 								<input id="filter-battery" type="radio" name="nutrition" value="battery">
