@@ -1,0 +1,423 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 17px;
+	color: #000000;	
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+/*         //////////     Главная страница     //////////    */
+.main-header {
+	background-color: #f4f7f9;
+}
+
+.logo {
+	background-color: #ee3643;
+}
+
+.logo:hover {
+	background-color: #ca2c37;
+}
+.logo:active {
+	background-color: #ba2732;
+}
+
+.search-form input {
+	font-size: 17px;
+	background-color: #293449;
+	border: none;
+}
+
+.search-form input[type="search"]::-webkit-input-placeholder {
+    color: #ffffff;
+} 
+
+.basket:hover,
+.bookmarks:hover,
+.search-form input:hover {
+	background-color: #212a3a;
+}
+
+.search-form input:focus {
+	background-color: #ffffff;
+	outline: none;
+}
+
+.basket:active,
+.bookmarks:active {
+	color: rgba(255, 255, 255, 0.6);
+	background-color: #161d29;
+}
+
+.order:hover {
+	background-color: #5fbb2d;
+}
+
+.order:active {
+	color: rgba(255, 255, 255, 0.6);
+	background-color: #518534;
+}
+
+.main-menu {
+	background-color: #293449;
+	color: #ffffff;
+	font-size: 17px;
+	line-height: 18px;
+}
+
+.main-menu a {
+	color: #ffffff;
+}
+
+.order {
+	background-color: #63a63e;
+}
+
+.header-center h1 {
+	font-size: 16px;
+	line-height: 23px;
+	color: #ee3643;
+}
+
+.contacts p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
+}
+
+.telephone {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ee3643;
+	border: 2px solid #ffffff;
+}
+
+.user-navigation a {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.user-navigation a:hover {
+	color: #ee3643;
+}
+
+.user-navigation a:active {
+	color: rgba(0, 0, 0, 0.3)
+}
+
+.top-navigation  {
+	line-height: 17px;
+	background-color: #32425c;
+}
+
+.top-navigation a {
+	color: #ffffff;
+}
+
+.top-navigation a:hover {
+	background-color: #293449;
+}
+
+.top-navigation a:active {
+	color: rgba(255, 255, 255, 0.5);
+	background-color: #1d2739;
+}
+
+/*         //////////     Секция СЕРВИСЫ     //////////    */
+.services {
+	background-color: #f4f7f9;
+}
+
+.services h2 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #000000;
+}
+
+.services p {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.services-list li {
+	line-height: 30px;
+	font-size: 21px;
+	
+}
+
+.services-item a {
+	color: #ffffff;
+	background-color: #32425c;
+}
+
+.services-item-current a {
+	color: #32425c;
+	background-color: #ffffff;
+}
+
+.services h3 {
+	font-size: 36px;
+	line-height: 36px;
+	color: #32425c;
+}
+
+/*         //////////     Секция ИНФОРМАЦИЯ     //////////    */
+.information h3 {
+	font-size: 30px;
+	color: #000000;
+}
+
+.information p {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+}	
+
+.transport-companies-list {
+	font-size: 18px;
+	color: #000000;
+}
+
+.button {
+	font-size: 14px;
+	color: #ffffff;
+	background-color: #ee3643;
+}
+
+/*         //////////     Секция ПОДВАЛ    //////////    */
+.top-footer {
+	background-color: #32425c;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.page-footer-contacts {
+	color: #f3f7f9;
+}
+
+.bottom-navigation a {
+	color: #f1f5f7;
+}
+
+.products a {
+	color: #ffda96;
+}
+.developer a:hover,
+.products a:hover,
+.bottom-navigation a:hover {
+	text-decoration: underline;
+}
+
+.bottom-navigation a:active  {
+	color: rgba(241, 245, 247, 0.5);
+}
+
+.products a:active {
+	color: rgba(255, 209, 128, 0.5);
+}
+
+.bottom-footer {
+	background-color: #293449;
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.bottom-footer a {
+	color: #ffd180;
+}
+
+.social a:hover,
+.social a:active {
+	background-color: #ee3643;
+}
+
+.developer a:active {
+	color:#ee3643;
+}
+
+/*         //////////     Модальное окно     //////////    */
+.modal-letter {
+	font-size: 18px;
+	border-top: 7px solid #ee3643;
+}
+
+.user-mail-field input,
+.user-name-field input,
+.letter-field textarea {
+	border: none;
+	color: #a9a9a9;
+	border: 2px solid #d7dcde;
+}
+
+.modal-letter-form textarea,
+.modal-letter-form input::placeholder {
+	font-family: "PT Sans", Arial, sans-serif;
+	color: #999999;
+	font-size: 17px;
+}
+
+.modal-letter button {
+	margin: 0;
+	border: 0;
+}
+
+.letter-field textarea:hover,
+.modal-letter-form input:hover {
+	border-color: #b5b5b5;
+}
+
+.letter-field textarea:focus,
+.modal-letter-form input:focus {
+	border-color: #ee3643;
+	outline: none;
+}
+
+.tu-send {
+	background-color: #f4f4f4;
+}
+
+.modal-information-continue {
+	background-color: #ffffff;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+/*    //////////    Страница каталога      ///////////    */
+.choice {
+	font-family: "PT Sans", Arial, sans-serif;
+}
+
+.user-navigation-name {
+	font-size: 21px;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.user-navigation-list {
+	font-size: 16px;
+	color: #32425c;
+	text-decoration: underline;
+}
+
+.user-navigation-name:active {
+	color: rgba(0, 0, 0, 0.3)
+}
+
+.my-orders:hover,
+.personal-area:hover {
+	color: #ee3643;
+}
+
+.my-orders:active,
+.personal-area:active {
+	color: rgba(50, 66, 92, 0.3);
+}
+
+.breadcrumbs li {
+	font-size: 13px;
+	color: #000000;
+}
+
+.choice h1 {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 30px;
+	color: #32425c;
+	background-color: #f2f6f8;
+}
+
+.filters-manufacturers-form fieldset {
+	border: none;
+}
+
+.filters-manufacturers-form legend {
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+.filters-manufacturers-form label {
+	font-size: 15px;
+}
+
+.button-show {
+	font-size: 13px;
+	outline: 2px solid #e5e5e5;
+	background-color: #ffffff;
+	border: none;
+	text-transform: uppercase;
+}
+
+.catalog-list h3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.catalog-list del {
+	font-size: 17px;
+	color: #999999;
+}
+
+.catalog-item-bиtton {
+	color: #ffffff;
+	background-image:
+}
+
+.pagination-list a {
+	font-size: 13;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.pagination-item-current a {
+	color: #ffffff;
+	background-color: #ee3643;
+}
+
+.description {
+	background-color: #f4f7f9;
+}
+
+.description h2 {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 30px;
+}
+
+.description p {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+/*         //////////     Модальное окно     //////////    */
+.modal-information {
+	border-top: 7px solid #ee3643;
+}
+
+.modal-information h2 {
+	font-size: 30px;
+}
+
+.modal-information p {
+	font-size: 14px;
+	background-color: #f1f1f1;
+}
+
+
+
+
+

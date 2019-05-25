@@ -3,12 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Техномарт</title>
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
 			<div class="main-menu">
 				<a class="logo">
-					<img src="#" width="1" height="1" alt="Логотип Техномарт">
+					<img src="img/logo.png" width="109" height="19" alt="Логотип Техномарт">
 				</a>
 				<form class="search-form" action="" method="post">
 					<input type="search" name="search" placeholder="Поиск:"> 
@@ -50,7 +53,18 @@
 				
 			</section>
 			<section class="services">
-				
+				<h2>Сервисы</h2>
+				<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+				<ul class="services-list">
+					<li class="services-item-current"><a href="#">Доставка</a></li>
+					<li class="services-item"><a href="#">Гарантия</a></li>
+					<li class="services-item"><a href="#">Кредит</a></li>
+				</ul>
+				<div class="service-delivery">
+					<h3>Доставка</h3>
+					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+					<img class="service-picture" src="img/delivery.png" width="468" height="261" alt="Картинка">
+				</div>
 			</section>
 			<section class="information">
 				<h2 class="visually-hidden">Информация о компании</h2>
@@ -59,10 +73,10 @@
 					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 					<p>Мы можем доставить ваш товар в самые отдаленные точки России!
 					Техномарт работает со многими транспортными компаниями: </p>
-					<ul class="transport-companies">
-						<li>Деловые линии</li>
-						<li>Автотрейдинг</li>
-						<li>ЖелДорЭкспедиция</li>
+					<ul class="transport-companies-list">
+						<li class="transport-companies-item">Деловые линии</li>
+						<li class="transport-companies-item">Автотрейдинг</li>
+						<li class="transport-companies-item">ЖелДорЭкспедиция</li>
 					</ul>
 					<a class="about-company button" href="#">Подробнее о компании</a>
 				</div>
@@ -80,7 +94,7 @@
 		<footer class="page-footer">
 			<div class="top-footer">
 				<div class="page-footer-contacts">
-					<img src="#" width="1" height="1" alt="Логотип Техномарт">
+					<img class="logo" src="img/logo.png" width="138" height="23" alt="Логотип Техномарт">
 					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
 				</div>
 				<ul class="bottom-navigation">
@@ -129,10 +143,12 @@
 					<input id="user-mail" type="text" name="user-mail" placeholder="email@example.com">
 				</div>
 				<div class="letter-field">
-					<label for="text-letter">Текст письма:</label>                    
+					<label for="text-letter">Текст письма:</label> 
 					<textarea id="text-letter" rows="10" cols="30" name="text-letter">В свободной форме</textarea>
 				</div>
-				<button class="button" type="submit">Отправить</button>
+				<div class="tu-send">
+					<button class="button" type="submit">Отправить</button>
+				</div>
 			</form>
 			<button class="modal-close" type="button" aria-label="закрыть окно"></button>
 		</section>
