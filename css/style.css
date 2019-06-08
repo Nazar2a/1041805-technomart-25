@@ -4,6 +4,7 @@ body {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 17px;
 	color: #000000;	
+	position: relative;
 }
 
 body a {
@@ -634,6 +635,57 @@ input[type="radio"].visually-hidden{
 }
 
 /*         //////////     Модальное окно    //////////    */
+
+
+
+
+.modal {
+  position: fixed;
+  background-color: #ffffff;
+ 
+}
+
+.modal-letter {
+	width: 620px;
+	top: 15px;
+	left: 50%;
+	margin-left: -310px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal-close {
+	font-size: 0;
+	align-self: flex-end;
+	width: 22px;
+	height: 22px;
+	background-color: #ffffff;
+	cursor: pointer;
+	padding: 15px 15px;
+	/* margin-right: 10px; */
+	border: 0;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 6px;
+  width: 28px;
+  height: 5px;
+  background-color: #EF3341;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
 .container-modal {
 	width: 460px;
 	margin: 0 auto;
@@ -670,7 +722,7 @@ input[type="radio"].visually-hidden{
 
 .user-mail-field input,
 .user-name-field input {
-	width: 220px;
+	width: 185px;
 }
 
 .user-mail-field input,
@@ -680,6 +732,7 @@ input[type="radio"].visually-hidden{
 	color: #a9a9a9;
 	border: 2px solid #d7dcde;
 	margin-top: 11px;
+	padding: 12px 15px;
 }
 
 .modal-letter-form textarea,
@@ -719,7 +772,7 @@ input[type="radio"].visually-hidden{
 	background-color: #ffffff;
 	border: none;
 	cursor: pointer;
-	outline: none;
+	outline: none; 
 }
 
 /*    //////////    Страница каталога      ///////////    */
@@ -1000,7 +1053,6 @@ input[type="radio"].visually-hidden{
 	padding: 0;
 	justify-content: space-between;
 	margin: 20px 0 43px 0;
-	
 }
 
 .catalog-list h3 {
