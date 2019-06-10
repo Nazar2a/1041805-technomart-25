@@ -314,6 +314,59 @@ input[type="radio"].visually-hidden{
 	background-color: #1d2739;
 }
 
+/*         //////////      Секция ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ   //////////    */
+
+.wrapper-for-headline {
+	display: flex;
+	background-color: #f9f5f0;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wrapper-for-headline h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 30px;
+	margin-left: 30px;
+	letter-spacing: -0.9px;
+}
+
+.wrapper-for-headline a {
+	margin: 25px;
+	padding: 10px 0px 10px 0px;
+	width: 253px;
+	text-align: center;
+}
+
+.manufacturers {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 85px;
+}
+
+.manufacturers li {
+	width: 218px;
+	min-height: 143px;
+	border: 1px solid #eaeaea;
+	padding: 0;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.manufacturers li:nth-child(4n) {
+	margin-right: 0;
+}
+
+.manufacturers li a {
+	width: 220px;
+	min-height: 145px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 /*         //////////      Секция СЕРВИСЫ    //////////    */
 .services {
 	background-color: #f4f7f9;
@@ -649,7 +702,7 @@ input[type="radio"].visually-hidden{
 	display: flex;
 	flex-direction: column;
 	box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
-	/* display: none; */
+	display: none;
 }
 
 .modal-close {
@@ -1214,15 +1267,40 @@ input[type="radio"].visually-hidden{
 	border-top: 7px solid #ee3643;
 	width: 620px;
 	font-size: 18px;
+	bottom: 200px;
+	left: 50%;
+	margin-left: -310px;
+	box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+	
+}
+
+.headline-wrapper {
+	position: relative;
+	margin: 0 80px;
 }
 
 .modal-information h2 {
 	font-size: 30px;
 	margin: 68px auto;
+	text-align: center;
+	padding-left: 35px;
 }
+
+.modal-information h2::before {
+	content: '';
+	position: absolute;
+	top: -15px;
+	left: 1px; 
+	width: 66px;
+	height: 66px;
+	background-image: url("../img/modal-check.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+} 
 
 .modal-information-wrapper {
 	background-color: #f1f1f1;
+	padding: 0 80px;
 }
 
 .modal-information p {
