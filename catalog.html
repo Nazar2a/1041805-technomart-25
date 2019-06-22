@@ -23,7 +23,7 @@
 				</div>
 			</div>
 			<div class="header-center  container">
-				<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>  
+				<h1>Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>  
 				<div class="contacts">
 					<p class="telephone">+7 (812) 555-05-55</p>
 					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -70,13 +70,22 @@
 				<h1>Перфораторы</h1>
 				<div class="choice-wrapper">
 					<section class="filters">
-						<h2 class="visually-hidden">Фильтр товаров</h2>
-						<!-- 
-							<div class="filters-price">
-							Фильтр по цене
-							</div>
-						-->
+						<h2>Фильтр:</h2>
 						<form class="filters-manufacturers-form" action="" method="get">
+							<fieldset>
+								<legend class="filters-type">Цена:</legend>
+								<div class="price-slider">
+									<p></p>
+								</div>
+								<ul class="price-filter">
+									<li class="price-filter-item">
+										<input type="text" name="min-price" placeholder="0">
+									</li>
+									<li class="price-filter-item"> 
+										<input type="text" name="max-price" placeholder="30000">
+									</li>
+								</ul>
+							</fieldset>
 							<fieldset>
 								<legend class="filters-type">Производители:</legend>
 								<ul class="product-filter">
@@ -121,9 +130,14 @@
 					<section class="catalog">
 						<h2 class="visually-hidden">Каталог перфораторов</h2>
 						<div class="sorting">
-							<p>Сортировка</p>
+							<p>Сортировка:</p>
+							<ul class="sorting-list">
+								<li class="sorting-item"><a class="sorting-current" href="#">По цене</a></li>
+								<li class="sorting-item"><a href="#">По типу</a></li>
+								<li class="sorting-item"><a href="#">По функционалу</a></li>
+							</ul>
 						</div>
-						<ul class="catalog-list">
+						<ul class="catalog-list catalog-list-main">
 							<li class="catalog-item">
 								<h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
 								<img src="img/item1.jpg" width="218" height="170" alt="Перфоратор Bosch bfg 3000">
@@ -283,4 +297,4 @@
 			</div>
 			
 		</body>
-	</html>			
+	</html>					

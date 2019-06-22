@@ -46,14 +46,95 @@
 			</nav>
 		</header>
 		<main>
-			<section class="catalog">
-				
+			<section class="catalog-offers  container">
+				<div class="catalog-goods">
+					<ul class="catalog-goods-list">
+						<li class="catalog-goods-item  materials-item flag-new">
+							<h3>Материалы</h3>
+							<a href="#">На любой вкус</a>
+						</li>
+						<li class="catalog-goods-item  tool-item">
+							<h3>Инструмент</h3>
+							<a href="#">На все случаи</a>
+						</li>
+						<li class="catalog-goods-item  equipment-item">
+							<h3>Техника</h3>
+							<a href="#">Для стройки</a>
+						</li>
+					</ul>
+				</div>		
+				<div class="catalog-additional-services">
+					<div class="slider-container">
+						<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+						<input class="visually-hidden" type="radio" id="product-2" name="toggle">
+						<div class="slider-controls">
+							<label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+							<label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+						</div>
+						<ul class="slider-list">
+							<li class="slider-item">
+								<h3>Дрели</h3>
+								<p>Соседям на радость!</p>
+								<a class="button" href="#">Открыть каталог</a>
+							</li>
+							<li class="slider-item">
+								<h3>Перфораторы</h3>
+								<p>Настоящие мужские игрушки</p>
+								<a class="button" href="#">Открыть каталог</a>
+							</li>
+						</ul>  
+					</div>
+					<ul class="catalog-additional-services-list">
+						<li class="catalog-goods-item  discounts-item">
+							<h3>Скидки 50%</h3>
+							<a href="#">На 350 товаров</a>
+						</li>
+						<li class="catalog-goods-item  delivery-item">
+							<h3>Доставка</h3>
+							<a href="#">Бесплатно</a>
+						</li>
+					</ul>
+				</div>				
 			</section>
-			<section class="popular_goods  container">
+			<section class="popular_goods container">
 				<div class="wrapper-for-headline">
 					<h2>Популярные товары:</h2>
 					<a class="button" href="#">Все популярные товары</a>
 				</div>
+				<ul class="catalog-list catalog-list-popular ">
+					<li class="popular-catalog-item">
+						<h3 class="catalog-item-title">Перфоратор BOSCH BFG 9000</h3>
+						<img src="img/item-image.png" width="218" height="170" alt="Перфоратор Bosch bfg 3000">
+						<p class="catalog-item-price">
+							<del>32500 Р.</del>
+							<a class="catalog-item-bиtton" href="#">25500 Р.</a>
+						</p>
+					</li>
+					<li class="popular-catalog-item">
+						<h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
+						<img src="img/item1.jpg" width="218" height="170" alt="Перфоратор Bosch bfg 3000">
+						<p class="catalog-item-price">
+							<del>22500 Р.</del>
+							<a class="catalog-item-bиtton" href="#">15500 Р.</a>
+						</p>
+					</li>
+					<li class="popular-catalog-item">
+						<h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
+						<img src="img/item2.jpg" width="218" height="170" alt="Перфоратор Bosch bfg 6000">
+						<p class="catalog-item-price">
+							<del>30500 Р.</del>
+							<a class="catalog-item-bиtton" href="#">25500 Р.</a>
+						</p>
+					</li>
+					<li class="popular-catalog-item flag-new">
+						<h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
+						<img src="img/item1.jpg" width="218" height="170" alt="Перфоратор Bosch bfg 2000"> 
+						<p class="catalog-item-price">
+							<span class="old-price"></span>
+							<a class="catalog-item-bиtton" href="#">12500 Р.</a>
+						</p>
+					</li>	
+				</ul>
 			</section>
 			<section class="popular_manufacturers container">
 				<div class="wrapper-for-headline">
@@ -172,20 +253,20 @@
 			<section class="modal modal-letter">
 				<button class="modal-close" type="button" aria-label="закрыть окно">Закрыть</button>
 				<h2 class="visually-hidden">Напишите нам</h2>
-				<form class="modal-letter-form container-modal" action="" method="post">
+				<form class="modal-letter-form" action="" method="post">
 					<div class="modal-letter-wrapper">
-						<div class="user-name-field">
+						<div class="user-field">
 							<label for="user-name">Ваше имя:</label>
 							<input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
 						</div>
-						<div class="user-mail-field">
+						<div class="user-field">
 							<label for="user-mail">Ваш e-mail:</label>
 							<input id="user-mail" type="text" name="user-mail" placeholder="email@example.com">
 						</div>
 					</div>
-					<div class="letter-field">
+					<div class="modal-letter-wrapper">
 						<label for="text-letter">Текст письма:</label> 
-						<textarea id="text-letter" rows="4" cols="47" name="text-letter">В свободной форме</textarea>
+						<textarea id="text-letter" name="text-letter" placeholder="В свободной форме"></textarea>
 					</div>
 					<div class="tu-send">
 						<button class="button" type="submit">Отправить</button>
