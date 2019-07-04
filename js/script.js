@@ -1,3 +1,4 @@
+
 var delivery = document.querySelector(".service-delivery-item");
 
 var delivery_list = document.querySelector(".service-delivery");
@@ -30,10 +31,14 @@ var write = document.querySelector(".write");
 
 var modal_letter = document.querySelector(".modal-letter");
 
-var buy2 = document.querySelector(".buy");
+var close_modal_map = document.querySelector("#close-modal-map");
+
+
+var buy = document.querySelector(".buy");
 
 var modal_information = document.querySelector(".modal-information");
 
+var close_modal_information = document.querySelector("#close-modal-information");
 
 
 
@@ -93,9 +98,9 @@ write.addEventListener("click", function (evt) {
 	modal_letter.classList.add("show");
 });
 
-buy2.addEventListener("click", function (evt) {
+close_modal_map.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	modal_information.classList.add("show");
+	modal_map.classList.remove("show");
 });
 
 
@@ -104,6 +109,16 @@ buy2.addEventListener("click", function (evt) {
 
 
 
+buy.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	modal_information.classList.add("show-catalog");
+});
+
+
+close_modal_information.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	modal_information.classList.remove("show-catalog");
+});
 
 
 
