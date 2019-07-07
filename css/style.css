@@ -5,6 +5,7 @@ body {
 	font-size: 17px;
 	color: #000000;
 	position: relative;
+	min-width: 960px;
 }
 
 
@@ -360,7 +361,7 @@ input[type="radio"].visually-hidden{
 }
 
 .catalog-goods-item h3 {
-	font-family: Cuprum;
+	font-family:  "Cuprum", Arial, sans-serif;
 	font-size: 24px;
 	font-weight: bold;
 	padding: 22px 10px 7px 22px;
@@ -645,8 +646,7 @@ input[type="radio"].visually-hidden{
 
 .catalog-list-popular {
 	margin: 0;
-	margin-top: 20px;
-	margin-bottom: 3px;
+	margin-top: 17px;
 	list-style: none;
 }
 
@@ -751,6 +751,7 @@ input[type="radio"].visually-hidden{
 	line-height: 24px;
 	color: #000000;
 	margin: 0;
+	width: 400px;
 }
 
 .services-wrapper {
@@ -847,7 +848,7 @@ input[type="radio"].visually-hidden{
 }
 
 .service-warranty p {
-	max-width: 380px;
+	max-width: 370px;
 }
 
 .service-credit p {
@@ -891,7 +892,7 @@ input[type="radio"].visually-hidden{
 	font-size: 30px;
 	color: #000000;
 	margin: 0;
-	margin-bottom: 24px;
+	margin-bottom: 22px;
 }
 
 .information p {
@@ -901,6 +902,14 @@ input[type="radio"].visually-hidden{
 	color: #000000;
 	margin: 0;
 	margin-top: 23px;
+}
+
+.information p:nth-child(3) {
+	width: 400px;
+}
+
+.map p {
+	width: 200px;
 }
 
 .transport-companies-list {
@@ -938,6 +947,7 @@ input[type="radio"].visually-hidden{
 	color: #ffffff;
 	background-color: #ee3643;
 	border-radius: 2px;
+	text-decoration: none;
 }
 
 .about-company {
@@ -947,7 +957,7 @@ input[type="radio"].visually-hidden{
 .map-oll {
 	display: block;
 	margin-top: 32px;
-	margin-bottom: 35px;
+	margin-bottom: 34px;
 }
 
 .write {
@@ -984,6 +994,7 @@ input[type="radio"].visually-hidden{
 	margin: 0;
 	margin-left: 2px;
 	min-width: 325px;
+	width: 300px;
 }
 
 
@@ -1002,7 +1013,7 @@ input[type="radio"].visually-hidden{
 }
 
 .top-footer-wrapper li {
-	margin: 17px 0 17px 60px;
+	margin: 17px 0 17px 59px;
 }
 
 .bottom-navigation-list a {
@@ -1040,7 +1051,12 @@ input[type="radio"].visually-hidden{
 }
 
 .copyright {
-	margin: 37px 162px 35px 0;
+	margin: 37px 141px 35px 0;
+	min-width: 250px;
+}
+
+.social {
+	margin-right: 118px;
 }
 
 .social ul {
@@ -1083,6 +1099,7 @@ input[type="radio"].visually-hidden{
 	width: auto;
 	margin: 0;
 	padding: 0;
+	width: 138px;
 }
 
 .developer p:first-child {
@@ -1108,12 +1125,13 @@ input[type="radio"].visually-hidden{
 	font-size: 18px;
 	border-top: 7px solid #ee3643;
 	display: none;
+	z-index: 200;
 }
 
 .modal-close {
 	position: absolute;
-	top: 9px;
-	right: 9px;
+	top: 6px;
+	right: 5px;
 	font-size: 0;
 	width: 22px;
 	height: 22px;
@@ -1148,14 +1166,15 @@ input[type="radio"].visually-hidden{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-top: 46px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 17px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .user-field {
-	max-width: 220px;
+	min-width: 220px;
+	margin-top: 35px;
 }
 
 .modal-letter-wrapper label {
@@ -1181,7 +1200,7 @@ input[type="radio"].visually-hidden{
 }
 
 .modal-letter-wrapper textarea {
-	padding-top: 12px;
+	padding-top: 5px;
 	padding-bottom: 12px;
 	resize: none;
 	height: 114px;
@@ -1191,7 +1210,7 @@ input[type="radio"].visually-hidden{
 .modal-letter-form input::placeholder {
 	font-family: "PT Sans", Arial, sans-serif;
 	color: #999999;
-	font-size: 17px;
+	font-size: 13px;
 }
 
 .modal-letter-wrapper textarea:hover,
@@ -1233,6 +1252,7 @@ input[type="radio"].visually-hidden{
 	margin-left: -470px;
 	box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.75);
 	display: none;
+	z-index: 200;
 }
 
 .modal-map-wrapper {
@@ -1242,9 +1262,9 @@ input[type="radio"].visually-hidden{
 .modal-map img {
 	margin-bottom: -5px;
 	position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+	top: 0;
+	left: 0;
+	z-index: 1;
 	z-index: 1;
 }
 
@@ -1434,8 +1454,18 @@ input[type="radio"].visually-hidden{
 	background-color: #f7f3ec;
 	padding-top: 39px;
 	border-radius: 2px;
-	margin-bottom: 9px;
+	margin-bottom: 10px;
 	position: relative;
+}
+
+.price-slider::after {
+	content: "";
+	position: absolute;
+	top: 39px;
+	left: 42px;
+	width: 116px;
+    height: 2px;
+	background-color: #0BCD7A;
 }
 
 .price-slider p {
@@ -1443,7 +1473,6 @@ input[type="radio"].visually-hidden{
 	border-top: 2px solid #d7dcde;
 	margin: 0 auto;
 }
-
 
 .price-slider p::after {
 	content: "";
@@ -1541,9 +1570,9 @@ input[type="radio"].visually-hidden{
 	padding: 0;
 }
 
-.product-filter-item::before {
+.product-filter-item input + label::before {
 	position: absolute;
-	content: '';
+	content: "";
 	left: 0px;
 	width: 19px;
 	height: 19px;
@@ -1553,7 +1582,7 @@ input[type="radio"].visually-hidden{
 
 .product-filter-item input:checked + label::after {
 	position: absolute;
-	content: '';
+	content: "";
 	left: 0px;
 	width: 25px;
 	height: 19px;
@@ -1573,9 +1602,9 @@ input[type="radio"].visually-hidden{
 	border-radius: 50%;
 }
 
-.nutrition-filter-item::before {
+.nutrition-filter-item input + label::before {
 	position: absolute;
-	content: '';
+	content: "";
 	left: 0px;
 	width: 19px;
 	height: 19px;
@@ -1603,7 +1632,7 @@ input[type="radio"].visually-hidden{
 	border: none;
 	text-transform: uppercase;
 	display: block;
-	margin: 62px 0 0 0;
+	margin: 60px 0 0 0;
 	padding: 11px 38px 10px 39px;
 }
 
@@ -1651,7 +1680,7 @@ input[type="radio"].visually-hidden{
 
 .sorting-list::after {
 	position: absolute;
-	content: '';
+	content: "";
 	top: 5px;
 	right: 50px;
 	width: 0px;
@@ -1667,7 +1696,7 @@ input[type="radio"].visually-hidden{
 
 .sorting-list::before {
 	position: absolute;
-	content: '';
+	content: "";
 	top: 5px;
 	right: 17px;
 	width: 0px;
@@ -1694,7 +1723,7 @@ input[type="radio"].visually-hidden{
 	position: relative;
 }
 
-.catalog-item .actions {
+.actions {
 	position: absolute;
 	top: 5px;
 	left: 2px;
@@ -1706,8 +1735,8 @@ input[type="radio"].visually-hidden{
 	z-index: 5;
 }
 
-.catalog-item .actions .buy,
-.catalog-item .actions .bookmark {
+.actions .buy,
+.actions .bookmark {
 	display: block;
 	width: 129px;
 	margin: 0 auto;
@@ -1720,23 +1749,24 @@ input[type="radio"].visually-hidden{
 	color: white;
 	font-size: 14px;
 	font-weight: normal;
-	font-family: "Cuprum", sans-serif;
+	font-family:  "Cuprum", Arial, sans-serif;
 	line-height: 18px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
-.catalog-item .actions .bookmark {
+.actions .bookmark {
 	color: #32425c;
 	background: white;
 	border-bottom-color: #63a63e;
 }
 
-.catalog-item .actions {
+.actions {
 	display: none;
 }
 
-.catalog-item:hover .actions {
+.catalog-item:hover .actions,
+.popular-catalog-item:hover .actions {
 	display: block;
 }
 
@@ -1772,7 +1802,7 @@ input[type="radio"].visually-hidden{
 
 .flag-new h3::after  {
 	position: absolute;
-	content: '';
+	content: "";
 	top: -2px;
 	right: 0px;
 	width: 60px;
@@ -1903,7 +1933,7 @@ input[type="radio"].visually-hidden{
 }
 
 .modal-information h2::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: -15px;
 	left: 1px;
@@ -1944,7 +1974,5 @@ input[type="radio"].visually-hidden{
 	display: block;
 }
 
-.show-catalog {
-	display: block;
-}
+
 
