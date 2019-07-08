@@ -1117,9 +1117,8 @@ input[type="radio"].visually-hidden{
 
 .modal-letter {
 	width: 620px;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+	left: 470px;
+	top: 17%;
 	display: block;
 	box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 	font-size: 18px;
@@ -1272,6 +1271,9 @@ input[type="radio"].visually-hidden{
 	position: relative;
 	z-index: 2;
 	border: none;
+	width: 940px;
+	height: 446px;
+	border: 0;
 }
 
 .choice {
@@ -1585,10 +1587,14 @@ input[type="radio"].visually-hidden{
 	content: "";
 	left: 0px;
 	width: 25px;
-	height: 19px;
-	background-image: url("../img/checkbox-on.png");
+	height: 25px;
+	background-image: url("../img/checkbox-on.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}
+
+.product-filter-item input:checked + label::before {
+	display: none;
 }
 
 .nutrition-filter-item input:checked + label::after {
@@ -1600,6 +1606,7 @@ input[type="radio"].visually-hidden{
 	height: 10px;
 	background-color: #c5c5c5;
 	border-radius: 50%;
+	transform: translate(-3%, 4%);
 }
 
 .nutrition-filter-item input + label::before {
@@ -1970,9 +1977,58 @@ input[type="radio"].visually-hidden{
 	padding: 14px 45px;
 }
 
+@keyframes bounce {
+	0% {
+		transform: translateY(-2000px);
+	}
+	
+	70% {
+		transform: translateY(30px);
+	}
+	
+	90% {
+		transform: translateY(-10px);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-10px);
+	}
+	
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(10px);
+	}
+}
+
+
 .show {
 	display: block;
 }
 
+.show-popup {
+	display: block;
+	animation-name: bounce;
+	animation-duration: 0.6s;
+}
 
+.modal-error {
+	animation: shake 0.6s;
+}
 
