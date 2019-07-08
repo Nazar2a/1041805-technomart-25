@@ -20,7 +20,6 @@ var close_modal_map = document.querySelector("#close-modal-map");
 
 
 
-
 var login = modal_letter.querySelector("[name=user-name]");
 var form = modal_letter.querySelector("form");
 var user_mail = modal_letter.querySelector("[name=user-mail]");
@@ -29,6 +28,8 @@ var text_letter = modal_letter.querySelector("[name=text-letter]");
 var isStorageSupport = true;
 var storage = "";
 var storage_mail = "";
+
+
 
 try {
 	storage = localStorage.getItem("login");
@@ -41,15 +42,6 @@ try {
 	} catch (err) {
 	isStorageSupport = false;
 }
-
-
-
-
-var buy = document.querySelector(".buy");
-var modal_information = document.querySelector(".modal-information");
-var close_modal_information = document.querySelector("#close-modal-information");
-
-
 
 
 delivery.addEventListener("click", function (evt) {
@@ -109,7 +101,6 @@ close_modal_map.addEventListener("click", function (evt) {
 });
 
 
-
 write.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	modal_letter.classList.add("show-popup");
@@ -141,22 +132,6 @@ form.addEventListener("submit", function (evt) {
 	}
 });
 
-
-
-
-
-
-
-buy.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	modal_information.classList.add("show-catalog");
-});
-
-
-close_modal_information.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	modal_information.classList.remove("show-catalog");
-});
 
 
 
